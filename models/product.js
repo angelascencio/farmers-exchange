@@ -11,7 +11,7 @@ Product.init(
 {
     // define columns
   
-    id: {
+  id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
@@ -42,6 +42,11 @@ Product.init(
     validation: {
     isNumeric: true,
     }
+  },
+
+  unit: {
+    type: DataTypes.STRING, 
+    allowNull: false,
   },
 
   category_id: {
