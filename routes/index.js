@@ -1,13 +1,12 @@
 const router = require('express').Router();
 
+const listingsRoutes = require('./listings');
+const userRoutes = require('./user');
+const homeRoutes = require('./home-routes.js');
 
-// GET all travellers
-router.get('/', async (req, res) => {
-    try {
-// res.render.homepage
-    } catch (err) {
 
-    }
-});
+router.use('/', homeRoutes);
+router.use('/user', userRoutes);
+router.use('/listings', listingsRoutes);
 
 module.exports = router;
