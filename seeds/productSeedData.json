@@ -1,0 +1,132 @@
+[
+  {
+    "product_name": "Apple, Northern Spy",
+    "description": "sweet, crisp",
+    "price": 0.50,
+    "unit": "item",
+    "stock": 100,
+    "category_id": 1,
+    "user_id": 2,
+    "id": "999"
+  },
+  {
+    "product_name": "Apple, Goldpur",
+    "description": "sour, crisp",
+    "price": 0.55,
+    "unit": "item",
+    "stock": 110,
+    "category_id": 1,
+    "user_id": 1,
+    "id": "998"
+  },
+  {
+    "product_name": "Pear, Concorde",
+    "description": "very sweet, crisp",
+    "price": 0.70,
+    "unit": "item",
+    "stock": 80,
+    "category_id": 1,
+    "user_id": 3,
+    "id": "997"
+  },
+  {
+    "product_name": "Grape, Concord",
+    "description": "sweet",
+    "price": 1.50,
+    "unit": "lbs",
+    "stock": 300,
+    "category_id": 1,
+    "user_id": 1,
+    "id": "996"
+  },
+  {
+    "product_name": "Broccoli",
+    "description": "earthy, mildly bitter",
+    "price": 1.55,
+    "unit": "lbs",
+    "stock": 50,
+    "category_id": 2,
+    "user_id": 5,
+    "id": "995"
+  },
+  {
+    "product_name": "Mushroom, Protabello",
+    "description": "earthy, light flavor",
+    "price": 0.50,
+    "unit": "lbs",
+    "stock": 100,
+    "category_id": 2,
+    "user_id": 2,
+    "id": "994"
+  },
+  {
+    "product_name": "Carrot",
+    "description": "very sweet, crunchy",
+    "price": 0.90,
+    "unit": "lbs",
+    "stock": 160,
+    "category_id": 2,
+    "user_id": 2,
+    "id": "993"
+  },
+  {
+    "product_name": "Bell Pepper, Yellow",
+    "description": "sweet",
+    "price": 0.90,
+    "unit": "lbs",
+    "stock": 220,
+    "category_id": 2,
+    "user_id": 6,
+    "id": "992"
+  },
+  {
+    "product_name": "String Bean",
+    "description": "starchy, light flavor",
+    "price": 0.40,
+    "unit": "lbs",
+    "stock": 390,
+    "category_id": 2,
+    "user_id": 6,
+    "id": "991"
+  },
+  {
+    "product_name": "Spinach",
+    "description": "mild, slightly sweet",
+    "price": 0.85,
+    "unit": "lbs",
+    "stock": 100,
+    "category_id": 2,
+    "user_id": 4,
+    "id": "990"
+  },
+  {
+    "product_name": "Watermelon",
+    "description": "very sweet, juicy",
+    "price": 4.60,
+    "unit": "item",
+    "stock": 88,
+    "category_id": 1,
+    "user_id": 6,
+    "id": "989"
+  },
+  {
+    "product_name": "Lettuce, Butter Crunch",
+    "description": "crisp",
+    "price": 0.35,
+    "unit": "lbs",
+    "stock": 240,
+    "category_id": 2,
+    "user_id": 6,
+    "id": "988"
+  },
+  {
+    "product_name": "Cherries",
+    "description": "sweet",
+    "price": 0.95,
+    "unit": "lbs",
+    "stock": 500,
+    "category_id": 1,
+    "user_id": 4,
+    "id": "987"
+  }
+]
