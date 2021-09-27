@@ -4,41 +4,47 @@
     "user_name": "Ethan",
     "password": "123fdgh",
     "location": "Los Angeles",
-    "contact": "336-445-7891"
+    "contact": "336-445-7891",
+    "email": "e@gmail.com"
   },
   {
     "id": 2,
     "user_name": "Manny",
     "password": "ksd-0msh",
     "location": "San Fernando",
-    "contact": "111-11-11111"
+    "contact": "111-111-1111",
+    "email": "m@gmail.com"
   },
   {
     "id": 3,
     "user_name": "Jose",
     "password": "978-0137043293",
     "location": "Sand Diego",
-    "contact": "222-222-2222"
+    "contact": "222-222-2222",
+    "email": "j@gmail.com"
   },
   {
     "id": 4,
     "user_name": "Kenneth",
     "password": "ls!.sht",
     "location": "Pacoima",
-    "contact": "333-333-3333"
+    "contact": "333-333-3333",
+    "email": "k@gmail.com"
   },
   {
     "id": 5,
     "user_name": "Karl",
     "password": "mshj@hfr",
     "location": "Burbank",
-    "contact": "444-444-4444"
+    "contact": "444-444-4444",
+    "email": "k@gmail.com"
   },
   {
     "id": 6,
-    "user_name": "Rubin",
+    "user_name": "rubin",
     "password": "1hs-2hjsh",
     "location": "San Fransico",
-    "contact": "555-555-5555"
+    "contact": "555-555-5555",
+    "email": "e@gmail.com"
   }
 ]
