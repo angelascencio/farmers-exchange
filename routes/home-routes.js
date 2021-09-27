@@ -27,6 +27,14 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/newUser', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    } else {res.render('newUser'); }
+});
+
+
 // get profile page
 router.get('/profile/:id', async (req, res) => {
     if (!req.session.loggedIn) {
@@ -84,6 +92,15 @@ router.post('/search', (req, res) => {
 });
 
 
+// get landing page
+router.get('/addPost', async (req, res) => {
+    try {
+// res.render('newPost')
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
 
   //use homeRoutes to res.render the relevant page based on the endpoint passed in trhough <a href="/example" > tags
   // use fetch requests in our front-end page js in order to make post/put/delete calls 
