@@ -16,24 +16,19 @@
       <ul>
         <li>
           <a href="/">Home</a>
-        </li>
+        </li>      
         <li>
-          <a href="/posts">Posts</a>
-        </li>
-        <li>
-          <a href="/login">Login</a>
-        </li>   
-      </ul>
-    </nav>
-  </header>
-  <nav>
-    <a href="/">Home</a>
+         <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
-  </nav>
+        </li>   
+      </ul>
+    </nav>
+  </header>
+  
   <main>
     <aside>
       <h2>You're logged in!</h2>
@@ -42,9 +37,16 @@
       {{{body}}}
     </div>
   </main>
+
+  
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
