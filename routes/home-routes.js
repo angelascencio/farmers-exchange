@@ -1,5 +1,5 @@
 const { Product } = require('../models');
-const User = require('../models/user');
+const { User } = require('../models');
 
 const router = require('express').Router();
 const { Op } = require("sequelize");
@@ -66,30 +66,7 @@ router.get('/profile/:id', async (req, res) => {
 //     });
 
 
-// get search results based on user search information
-router.post('/search', (req, res) => {
-    let { term } = req.body;
-    term = term.toLowerCase()
-    if (!req.session.loggedIn) {
-        res.redirect('/login');
-    } else {
-        // finds all product listings where the product name or description contain the search term at all
-        Product.findAll({
-            where:
-            {
-                [op.or]:
-                    [{ product_name: { [Op.like]: '%' + term + '%' } },
-                    { description: { [Op.like]: '%' + term + '%' } }]
-            }
-        })
 
-            .then(results => {
-                // res.render('searchResults', { results })
-                res.json(results)
-            })
-            .catch(err => console.log(err))
-    }
-});
 
 
 // get landing page
