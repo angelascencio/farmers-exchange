@@ -37,7 +37,7 @@ Product_user.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Product_user',
+    modelName: 'Product_cat',
   }
   );
 
