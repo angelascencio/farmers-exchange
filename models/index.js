@@ -25,4 +25,5 @@ User.hasMany( Product, {
 module.exports = {
   Product,
   Category,
+  User
 };

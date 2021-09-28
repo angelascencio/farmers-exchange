@@ -43,31 +43,32 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector('#password').value.trim();
   const passwordConfirm = document.querySelector('#password-confirm').value.trim();
 
-  if (userName && lastName && streetAddress && location && state && business && email && password && passwordConfirm) {
+  if (userName && location && business && email && password && passwordConfirm) {
     if (password === passwordConfirm) {
-    const response = await fetch('/api/user/', {
+    const response = await fetch('/api/user', {
       method: 'POST',
       body: JSON.stringify({ userName, location, business, email, password, passwordConfirm}),
       headers: { 'Content-Type': 'application/json' },
     })
-    } else {
-      alert('Failed to sign up.')  // -------- make this a non alert ------//
-    };
+    
 
     if (response.ok) {
       document.location.replace('/'); // ------ change to the correct route ------ //
     } else {
       alert('Failed to sign up.');
     }
+  } else {
+    alert('Failed to sign up.')  // -------- make this a non alert ------//
+  };
   }
 };
 
 document
-  .querySelector('.sign-in').addEventListener('submit', loginFormHandler);
+  .querySelector('.sign-in').addEventListener('click', loginFormHandler);
 
-document            
-  .querySelector('#logout').addEventListener('click', logout);
+// document            
+//   .querySelector('#logout').addEventListener('click', logout);
 
-document
-  .querySelector('.new-account').addEventListener('submit', signupFormHandler);
+// document
+  // .querySelector('.new-account').addEventListener('click', signupFormHandler);
 
