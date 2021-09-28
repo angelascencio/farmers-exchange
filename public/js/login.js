@@ -45,7 +45,7 @@ const signupFormHandler = async (event) => {
 
   if (userName && location && business && email && password && passwordConfirm) {
     if (password === passwordConfirm) {
-    const response = await fetch('/api/users', {
+    const response = await fetch('/api/user', {
       method: 'POST',
       body: JSON.stringify({ userName, location, business, email, password, passwordConfirm}),
       headers: { 'Content-Type': 'application/json' },
@@ -64,7 +64,7 @@ const signupFormHandler = async (event) => {
 };
 
 document
-  .querySelector('.sign-in').addEventListener('click', signupFormHandler);
+  .querySelector('.sign-in').addEventListener('click', loginFormHandler);
 
 // document            
 //   .querySelector('#logout').addEventListener('click', logout);

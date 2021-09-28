@@ -4,6 +4,6 @@ const listingsRoutes = require('./listings-routes');
 
 router.use('/listings', listingsRoutes);
 
-router.use('/users', userRoutes);
+router.use('/user', userRoutes);
 
 module.exports = router;
