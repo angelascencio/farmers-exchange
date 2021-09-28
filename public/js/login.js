@@ -5,7 +5,7 @@ const loginFormHandler = async (event) => {
   const passwordLogin = document.querySelector('#password-login').value.trim();
 
   if (emailLogin && passwordLogin) {
-    const response = await fetch('/api/users/login', {    // ------ change to the correct route ------ //
+    const response = await fetch('/api/user/login', {    // ------ change to the correct route ------ //
       method: 'POST',
       body: JSON.stringify({ emailLogin, passwordLogin }),
       headers: { 'Content-Type': 'application/json' },
@@ -21,7 +21,7 @@ const loginFormHandler = async (event) => {
 
 // ----------------- LOG OUT SECTION still under construction --------------------//
 const logout = async () => {
-  const response = await fetch('/api/users/logout', {   // ------ change to the correct route ------ //
+  const response = await fetch('/api/user/logout', {   // ------ change to the correct route ------ //
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
   });
@@ -45,7 +45,7 @@ const signupFormHandler = async (event) => {
 
   if (userName && lastName && streetAddress && location && state && business && email && password && passwordConfirm) {
     if (password === passwordConfirm) {
-    const response = await fetch('/api/users', {  // ------ change to the correct route ------ //
+    const response = await fetch('/api/user/', {
       method: 'POST',
       body: JSON.stringify({ userName, location, business, email, password, passwordConfirm}),
       headers: { 'Content-Type': 'application/json' },
@@ -65,7 +65,6 @@ const signupFormHandler = async (event) => {
 document
   .querySelector('.sign-in').addEventListener('submit', loginFormHandler);
 
-// ------ not finished ------ //
 document            
   .querySelector('#logout').addEventListener('click', logout);
 
