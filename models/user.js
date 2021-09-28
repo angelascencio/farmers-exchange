@@ -32,8 +32,18 @@ User.init(
     type: DataTypes.STRING,
     allowNull: false,
   },
-  
+
+  business: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+
   contact: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  
+  email: {
     type: DataTypes.STRING, 
     allowNull: false,
   }
