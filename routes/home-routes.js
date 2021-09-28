@@ -81,3 +81,5 @@ router.get('/addPost', async (req, res) => {
 
   //use homeRoutes to res.render the relevant page based on the endpoint passed in trhough <a href="/example" > tags
   // use fetch requests in our front-end page js in order to make post/put/delete calls 
+
+  module.exports = router;
