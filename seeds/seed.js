@@ -5,7 +5,6 @@ const Product = require('../models/product');
 
 const categorySeedData = require('./catagorySeedData.json');
 const productSeedData = require('./productSeedData.json');
-const userSeedData = require('./userSeedData.json');
 
 const seedDatabase = async () => {
 
