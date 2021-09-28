@@ -36,21 +36,18 @@ const logout = async () => {
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const firstName = document.querySelector('#first-name').value.trim();
-  const lastName = document.querySelector('#last-name').value.trim();
-  const streetAddress = document.querySelector('#street-address').value.trim();
-  const city = document.querySelector('#city').value.trim();
-  const state = document.querySelector('#state').value.trim();
+  const userName = document.querySelector('#user-name').value.trim();
+  const location = document.querySelector('#location').value.trim();
   const business = document.querySelector('#business').value.trim();
   const email = document.querySelector('#email').value.trim();
   const password = document.querySelector('#password').value.trim();
   const passwordConfirm = document.querySelector('#password-confirm').value.trim();
 
-  if (firstName && lastName && streetAddress && city && state && business && email && password && passwordConfirm) {
+  if (userName && lastName && streetAddress && location && state && business && email && password && passwordConfirm) {
     if (password === passwordConfirm) {
     const response = await fetch('/api/users', {  // ------ change to the correct route ------ //
       method: 'POST',
-      body: JSON.stringify({ firstName, lastName, streetAddress, city, state, business, email, password, passwordConfirm}),
+      body: JSON.stringify({ userName, location, business, email, password, passwordConfirm}),
       headers: { 'Content-Type': 'application/json' },
     })
     } else {
