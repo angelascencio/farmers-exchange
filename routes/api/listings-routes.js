@@ -21,9 +21,10 @@ router.post('/search', async (req, res) => {
                     { description: { [Op.like]: '%' + term + '%' } }]
             }
         });
-        posts = found.map( post => post.get({ plain:true }));
+        posts = found.map( posts => posts.get({ plain:true }));
         console.log(posts);
-        res.send(posts);
+        res.render('viewsearch', { posts, loggedIn: req.session.loggedIn, layout: "main" });
+        // res.send(posts);
         // res.render('viewsearch', {
         //     posts, layout: 'main'
         // })
