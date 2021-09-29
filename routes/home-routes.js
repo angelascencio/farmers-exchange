@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     try {
          res.render('home', {
             loggedIn: req.session.loggedIn,
+            id: req.session.id
         });
     } catch (err) {
         console.log(err);
@@ -43,8 +44,25 @@ router.get('/profile/:id', async (req, res) => {
         try {
             const dbProfileData = await User.findByPk(req.params.id)
 
-            const user = dbPaintingData.get({ plain: true });
-            res.render('profile', { user, loggedIn: req.session.loggedIn });
+            const user = dbProfileData.get({ plain: true });
+            res.render('profile', { user, loggedIn: req.session.loggedIn, id: req.session.id });
+        } catch (err) {
+            console.log(err);
+            res.status(500).json(err);
+        }
+    }
+});
+//get your profile page
+router.get('/profile', async (req, res) => {
+    if (!req.session.loggedIn) {
+        res.redirect('/login');
+    } else {
+        try {
+            const dbProfileData = await User.findByPk(req.session.userid)
+
+            const user = dbProfileData.get({ plain: true });
+            console.log(req.session.id)
+            res.render('profile', { user, loggedIn: req.session.loggedIn, id: req.session.id });
         } catch (err) {
             console.log(err);
             res.status(500).json(err);
@@ -72,7 +90,7 @@ router.get('/profile/:id', async (req, res) => {
 // get landing page
 router.get('/addPost', async (req, res) => {
     try {
-// res.render('newPost')
+res.render('add')
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
