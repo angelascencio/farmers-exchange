@@ -69,12 +69,10 @@ a:hover {
 
 .form-wrap {
   margin: auto;
-  background: var(--bg-color);
+  background:#081c15;
   color: #fff;
   padding: 1rem 3rem 3rem;
-  margin-top: 3rem;
-  border-bottom: 4px solid var(--primary-color);
-  box-shadow: var(--box-shadow);
+  margin-top: 5rem;
 }
 
 .form-wrap.reg-form,
