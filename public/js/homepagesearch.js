@@ -20,18 +20,18 @@ const loginFormHandler = async (event) => {
   };
   
   // ----------------- LOG OUT SECTION still under construction --------------------//
-  const logout = async () => {
-    const response = await fetch('/api/user/logout', {   // ------ change to the correct route ------ //
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    });
+//   const logout = async () => {
+//     const response = await fetch('/api/user/logout', {   // ------ change to the correct route ------ //
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//     });
   
-    if (response.ok) {
-      document.location.replace('/');   // ------ change to the correct route ------ //
-    } else {
-      alert('Failed to log out.');
-    }
-  };
+//     if (response.ok) {
+//       document.location.replace('/');   // ------ change to the correct route ------ //
+//     } else {
+//       alert('Failed to log out.');
+//     }
+//   };
   
   const signupFormHandler = async (event) => {
     event.preventDefault();
@@ -63,11 +63,35 @@ const loginFormHandler = async (event) => {
     }
   };
   
-  document
-    .querySelector('.sign-in').addEventListener('click', signupFormHandler);
+//   document
+//     .querySelector('.sign-in').addEventListener('click', loginFormHandler);
   
   // document            
   //   .querySelector('#logout').addEventListener('click', logout);
   
   // document
     // .querySelector('.new-account').addEventListener('click', signupFormHandler);
+
+    const searchFormHandler = async (event) => {
+        event.preventDefault();
+      
+        const term = document.querySelector('.searchField').value.trim();
+      
+          const response = await fetch('/api/listings/search', {    // ------ change to the correct route ------ //
+            method: 'POST',
+            body: JSON.stringify({ term }),
+            headers: { 'Content-Type': 'application/json' },
+          });
+      
+          if (response.ok) {
+            // document.location.replace('/');   // ------ change to the correct route ------ //
+            console.log(response)
+          } else {
+            alert('ERROR: invalid input');
+          }
+      };
+  
+    document
+    .querySelector('.searchbutton').addEventListener('click', searchFormHandler);
+  
+  
