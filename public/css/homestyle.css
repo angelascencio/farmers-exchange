@@ -12,6 +12,7 @@
 
 body{
   background: black;
+  padding-top: 1%;
 }
 .background {
   background: url(../images/farm1.jpeg) no-repeat center fixed;
@@ -113,6 +114,10 @@ label {
 #saleitems {
   padding: 5%;
   color: white;
+}
+
+.btn-reverse {
+  background-color: aqua;
 }
 
 

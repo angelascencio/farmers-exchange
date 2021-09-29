@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     try {
          res.render('home', {
             loggedIn: req.session.loggedIn,
-            id: req.session.id
+            id: req.session.userid
         });
     } catch (err) {
         console.log(err);
@@ -90,7 +90,7 @@ router.get('/profile', async (req, res) => {
 // get landing page
 router.get('/addPost', async (req, res) => {
     try {
-res.render('add')
+res.render('add', {loggedIn: req.session.loggedIn})
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
