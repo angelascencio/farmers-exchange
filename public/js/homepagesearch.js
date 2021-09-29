@@ -72,26 +72,27 @@ const loginFormHandler = async (event) => {
   // document
     // .querySelector('.new-account').addEventListener('click', signupFormHandler);
 
-    const searchFormHandler = async (event) => {
-        event.preventDefault();
+    // const searchFormHandler = async (event) => {
+    //     event.preventDefault();
       
-        const term = document.querySelector('.searchField').value.trim();
+    //     const term = document.querySelector('.searchField').value.trim();
       
-          const response = await fetch('/api/listings/search', {    // ------ change to the correct route ------ //
-            method: 'POST',
-            body: JSON.stringify({ term }),
-            headers: { 'Content-Type': 'application/json' },
-          });
+    //       const kek = await fetch('/api/listings/search', {    // ------ change to the correct route ------ //
+    //         method: 'POST',
+    //         body: JSON.stringify({ term }),
+    //         headers: { 'Content-Type': 'application/json' },
+    //       });
       
-          if (response.ok) {
-            // document.location.replace('/');   // ------ change to the correct route ------ //
-            console.log(response)
-          } else {
-            alert('ERROR: invalid input');
-          }
-      };
+    //       if (kek.ok) {
+    //         // resOut = JSON.parse(response)
+    //         // document.location.replace('/');   // ------ change to the correct route ------ //
+    //         // console.log(kek.json())
+
+    //       } else {
+    //         alert('ERROR: invalid input');
+    //       }
+    //   };
   
-    document
-    .querySelector('.searchbutton').addEventListener('click', searchFormHandler);
-  
+    // document
+    // .querySelector('.searchbutton').addEventListener('click', searchFormHandler);
   

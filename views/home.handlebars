@@ -17,10 +17,10 @@
 
                 <section id="search" class="search-wrap">
                     <h1>Find A Product</h1>
-                    <form action="/search" class="search-form">
+                    <form action="/api/listings/search" class="search-form" method="POST">
                         <i class="fas fa-search"></i>
                         <input type="search" name="term" placeholder="Apples, Oranges, Carrots..." class = "searchField">
-                        <input type="submit" value="Search" class = "searchbutton">
+                        {{!-- <input type="submit" value="Search" class = "searchbutton"> --}}
                     </form>
                 </section>
 
@@ -49,7 +49,7 @@
 
 {{#if loggedIn}}
 
-<script src="/js/homepagesearch.js"></script>
+{{!-- <script src="/js/homepagesearch.js"></script> --}}
 {{else}}
 <script src="/js/login.js"></script>
 {{/if}}
