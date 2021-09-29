@@ -23,7 +23,7 @@ router.post('/search', async (req, res) => {
         });
         posts = found.map( posts => posts.get({ plain:true }));
         console.log(posts);
-        res.render('viewsearch', { posts, loggedIn: req.session.loggedIn, layout: "main" });
+        res.render('viewsearch', { posts, loggedIn: req.session.loggedIn });
         // res.send(posts);
         // res.render('viewsearch', {
         //     posts, layout: 'main'
@@ -50,9 +50,11 @@ router.post('/new', async (req, res) => {
             price: req.body.price,
             stock: req.body.stock,
             unit: req.body.unit,
+            image_url: req.body.image_url
             });
             
-            res.status(200).json(dbProductData);
+            // res.status(200).json(dbProductData);
+            res.redirect("/")
           }
 
           catch (err) {
