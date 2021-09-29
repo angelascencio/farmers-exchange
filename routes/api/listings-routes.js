@@ -6,7 +6,7 @@ const { Op } = require("sequelize");
 // get search results based on user search information
 //SEARCH PROVIDES EMPTY RESPONSE WITH NO ACTUAL SEARCH RESULTS IN BODY
 router.post('/search', async (req, res) => {
-    let { term } = req.body.term;
+    let { term } = req.body;
     // term = term.toLowerCase()
     if (!req.session.loggedIn) {
         res.redirect('/login');
@@ -20,8 +20,13 @@ router.post('/search', async (req, res) => {
                     [{ product_name: { [Op.like]: '%' + term + '%' } },
                     { description: { [Op.like]: '%' + term + '%' } }]
             }
-        })
-        res.status(200).json(found);
+        });
+        posts = found.map( post => post.get({ plain:true }));
+        console.log(posts);
+        res.send(posts);
+        // res.render('viewsearch', {
+        //     posts, layout: 'main'
+        // })
     }
 
     catch (err){             
