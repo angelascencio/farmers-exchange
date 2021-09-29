@@ -14,25 +14,30 @@
   </head>
 
   <body>
-    <div class="row">
-      <header class="inner">
-        <h2><a href="./"><i class="fas fa-code"></i>
+   
+      <header>
+        <h2><a href="./"></i>
             Farmer Exchange</a></h2>
         <nav>
           <ul>
 
             <li>
               <a href="/">Home</a>
+            </li>  
               {{#if loggedIn}}
+              <li>
                 <button id="logout" class="btn-no-style">Logout</button>
+              </li>  
               {{else}}
+              <li>
                 <a href="/login">New User</a>
+              </li>  
               {{/if}}
             </li>
           </ul>
         </nav>
       </header>
-    </div>
+  
 
     {{{body}}}
 

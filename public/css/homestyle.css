@@ -2,6 +2,13 @@
     overflow-y: hidden;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
+*{
+  font-family:'Montserrat';
+  box-sizing: border-box;
+
+}
 .background {
   background: url(../images/farm1.jpeg) no-repeat center fixed;
   background-size: cover;
@@ -10,6 +17,7 @@
 }
 
 header {
+  background: #283618;
   display: flex;
   position: absolute;
   top: 0;
@@ -21,28 +29,42 @@ header {
 }
 header nav ul {
   display: flex;
+  list-style-type: none;
+
 }
-header nav li {
+li {
   margin: 0 1rem;
 }
-header.inner {
-  background-color: blue;
-  border-bottom: 4px solid white;
+/* header.inner {
+  border-bottom: 4px solid rgb(255, 255, 255);
   position: relative;
   box-shadow: grey;
-}
+} */
 
 .welcome-statement {
+  margin-top: 5%;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  color: rgb(168, 114, 69);
 }
 
 #welcome {
   font-size: 45px;
+  color: #bc6c25;
+
 }
+
 
 #buy-sell {
   font-size: 30px;
+  color: #bc6c25;
+
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #606c38;
+}
+
+
