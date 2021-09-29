@@ -77,15 +77,17 @@ const loginFormHandler = async (event) => {
       
         const term = document.querySelector('.searchField').value.trim();
       
-          const response = await fetch('/api/listings/search', {    // ------ change to the correct route ------ //
+          const kek = await fetch('/api/listings/search', {    // ------ change to the correct route ------ //
             method: 'POST',
             body: JSON.stringify({ term }),
             headers: { 'Content-Type': 'application/json' },
           });
       
-          if (response.ok) {
+          if (kek.ok) {
+            // resOut = JSON.parse(response)
             // document.location.replace('/');   // ------ change to the correct route ------ //
-            console.log(response)
+            console.log(kek.json())
+
           } else {
             alert('ERROR: invalid input');
           }
@@ -93,5 +95,4 @@ const loginFormHandler = async (event) => {
   
     document
     .querySelector('.searchbutton').addEventListener('click', searchFormHandler);
-  
   
