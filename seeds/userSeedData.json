@@ -4,6 +4,7 @@
     "user_name": "Ethan",
     "password": "123fdgh",
     "location": "Los Angeles",
+    "business": "Ethan's products",
     "contact": "336-445-7891",
     "email": "e@gmail.com"
   },
@@ -12,6 +13,7 @@
     "user_name": "Manny",
     "password": "ksd-0msh",
     "location": "San Fernando",
+    "business": "Manny's products",
     "contact": "111-111-1111",
     "email": "m@gmail.com"
   },
@@ -20,6 +22,7 @@
     "user_name": "Jose",
     "password": "978-0137043293",
     "location": "Sand Diego",
+    "business": "Jose's products",
     "contact": "222-222-2222",
     "email": "j@gmail.com"
   },
@@ -28,6 +31,7 @@
     "user_name": "Kenneth",
     "password": "ls!.sht",
     "location": "Pacoima",
+    "business": "Kenneth's Products",
     "contact": "333-333-3333",
     "email": "k@gmail.com"
   },
@@ -36,6 +40,7 @@
     "user_name": "Karl",
     "password": "mshj@hfr",
     "location": "Burbank",
+    "business": "Karl products",
     "contact": "444-444-4444",
     "email": "k@gmail.com"
   },
@@ -44,6 +49,7 @@
     "user_name": "rubin",
     "password": "1hs-2hjsh",
     "location": "San Fransico",
+    "business": "Rubin's products",
     "contact": "555-555-5555",
     "email": "e@gmail.com"
   }

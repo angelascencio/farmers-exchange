@@ -1,0 +1,55 @@
+<figure class="background">
+
+    {{!-- <header>
+        <h1 class="header">&#x1F966 Farmer Exchange &#x1F34E</h1>
+    </header> --}}
+
+    <section class="welcome-statement">
+        <p id="welcome">Welcome to Farmer Exchange</p>
+        <p id="buy-sell">Buy, sell or trade locally grown fresh produce</p>
+    </section>
+
+    <div class="row">
+        <div class="login card text-center justify-content-around border-success" style="width: 30rem; margin: 0 auto">
+            <div class="card-body">
+
+                {{#if loggedIn}}
+
+                <section id="search" class="search-wrap">
+                    <h1>Find A Product</h1>
+                    <form action="/api/listings/search" class="search-form" method="POST">
+                        <i class="fas fa-search"></i>
+                        <input type="search" name="term" placeholder="Apples, Oranges, Carrots..." class = "searchField">
+                        {{!-- <input type="submit" value="Search" class = "searchbutton"> --}}
+                    </form>
+                </section>
+
+                {{else}}
+                <h5 class="card-title">User Login</h5>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text mb-1" id="inputGroup-sizing-sm">Email</span>
+                    <input type="text" class="form-control mb-1" aria-label="Sizing example input" id="email-login"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="password-login"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <a href="#" class="sign-in btn btn-primary mt-3">submit</a>
+
+
+
+                {{/if}}
+
+
+            </div>
+        </div>
+</figure>
+
+{{#if loggedIn}}
+
+{{!-- <script src="/js/homepagesearch.js"></script> --}}
+{{else}}
+<script src="/js/login.js"></script>
+{{/if}}

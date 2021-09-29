@@ -6,8 +6,8 @@
     "unit": "item",
     "stock": 100,
     "category_id": 1,
-    "user_id": 2,
-    "id": "999"
+    "id": "999",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Apple, Goldpur",
@@ -16,8 +16,8 @@
     "unit": "item",
     "stock": 110,
     "category_id": 1,
-    "user_id": 1,
-    "id": "998"
+    "id": "998",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Pear, Concorde",
@@ -26,8 +26,8 @@
     "unit": "item",
     "stock": 80,
     "category_id": 1,
-    "user_id": 3,
-    "id": "997"
+    "id": "997",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Grape, Concord",
@@ -36,8 +36,8 @@
     "unit": "lbs",
     "stock": 300,
     "category_id": 1,
-    "user_id": 1,
-    "id": "996"
+    "id": "996",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Broccoli",
@@ -46,8 +46,8 @@
     "unit": "lbs",
     "stock": 50,
     "category_id": 2,
-    "user_id": 5,
-    "id": "995"
+    "id": "995",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Mushroom, Protabello",
@@ -56,8 +56,8 @@
     "unit": "lbs",
     "stock": 100,
     "category_id": 2,
-    "user_id": 2,
-    "id": "994"
+    "id": "994",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Carrot",
@@ -66,8 +66,8 @@
     "unit": "lbs",
     "stock": 160,
     "category_id": 2,
-    "user_id": 2,
-    "id": "993"
+    "id": "993",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Bell Pepper, Yellow",
@@ -76,8 +76,8 @@
     "unit": "lbs",
     "stock": 220,
     "category_id": 2,
-    "user_id": 6,
-    "id": "992"
+    "id": "992",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "String Bean",
@@ -86,8 +86,8 @@
     "unit": "lbs",
     "stock": 390,
     "category_id": 2,
-    "user_id": 6,
-    "id": "991"
+    "id": "991",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Spinach",
@@ -96,8 +96,8 @@
     "unit": "lbs",
     "stock": 100,
     "category_id": 2,
-    "user_id": 4,
-    "id": "990"
+    "id": "990",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Watermelon",
@@ -106,8 +106,8 @@
     "unit": "item",
     "stock": 88,
     "category_id": 1,
-    "user_id": 6,
-    "id": "989"
+    "id": "989",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Lettuce, Butter Crunch",
@@ -116,8 +116,8 @@
     "unit": "lbs",
     "stock": 240,
     "category_id": 2,
-    "user_id": 6,
-    "id": "988"
+    "id": "988",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   },
   {
     "product_name": "Cherries",
@@ -126,7 +126,7 @@
     "unit": "lbs",
     "stock": 500,
     "category_id": 1,
-    "user_id": 4,
-    "id": "987"
+    "id": "987",
+    "image_url": "https://res.cloudinary.com/ucla-coding-bootcamp/image/upload/v1632933313/miuvixtcefoqeegtxhus.png"
   }
 ]

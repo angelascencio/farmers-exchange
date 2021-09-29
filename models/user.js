@@ -32,12 +32,21 @@ User.init(
     type: DataTypes.STRING,
     allowNull: false,
   },
-  
-  contact: {
-    type: DataTypes.STRING, 
+
+  business: {
+    type: DataTypes.STRING,
     allowNull: false,
   },
 
+  contact: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  
+  email: {
+    type: DataTypes.STRING, 
+    allowNull: false,
+  }
 },
   {
     sequelize,
